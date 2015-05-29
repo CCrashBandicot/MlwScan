@@ -22,7 +22,7 @@ my $path = Win32::GetFolderPath(CSIDL_LOCAL_APPDATA);
 my $temp = $path."/Temp";
 
 xlog("\n\t        ********* ~ Log File ~ ***********\n");
-xlog("\n  [+] Search Files .exe , .bat , .vbs and .bin in Folder Temp....\n\n");
+xlog("\n  [+] Search Files .exe , .bat , .vbs , .dll and .bin in Folder Temp....\n\n");
 
 my @files = File::Find::Rule->maxdepth( 1 )
                             ->file
